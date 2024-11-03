@@ -1,0 +1,10 @@
+service: "service.py:IrisClassifier"
+labels:
+  owner: shyam_goli
+  project: bentoml_demo
+include:
+- "*.py"
+python:
+  packages:
+    - scikit-learn
+    - pandas

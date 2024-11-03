@@ -18,3 +18,7 @@ class IrisClassifier:
     @bentoml.api
     def predict(self, data: np.ndarray) -> np.ndarray:
         return self.model.predict(data)
+    
+    @bentoml.api
+    def helloworld(self):
+        return "All fine"
